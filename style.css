@@ -1,0 +1,17 @@
+* {
+    font-family: montserrat;
+}
+
+.text-box {
+    width: 80%;
+    margin: 0 auto;
+}
+.my-center {
+    width: 80%;
+    margin: 0 auto;
+}
+.my-center-btn {
+    width: auto;
+    display: inline;
+    margin: 0 auto;
+}
