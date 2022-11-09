@@ -4,6 +4,8 @@
   <title>Tastebin</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
@@ -12,6 +14,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+<py-env>
+  -uuid
+</py-env>
 </head>
 <body>
 
@@ -69,7 +74,15 @@
     <input type="date" class="form-control field-width" id="exampleFormControlInput1" placeholder="">
   </div>
   <form class="" role="search">
-    <button class="btn btn-success custom-btn" type="submit"><a href="" class="anchor">Generate Link</a></button>
+    <button class="btn btn-success custom-btn" type="submit">
+      <a href="" class="anchor">
+        <py-script>
+import uuid
+print(uuid.uuid4())        
+      </py-script>
+      Generate Link
+      </a>
+    </button>
 </form>
 </div>
 <!-- footer section -->
