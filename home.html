@@ -56,19 +56,20 @@
 </div>
 <br>
 <!-- paste title -->
-<div class="containerr-2">
-  <div class="form-group my-center">
-    <label class="title-mine">Title</label>
-    <input type="text" class="form-control field-width" id="exampleFormControlInput1" placeholder="" required/>
-  </div>
-  <div class="form-group my-center">
-    <label class="title-mine">Description (Optional)</label>
-    <input type="text" class="form-control field-width" id="exampleFormControlInput1" placeholder="">
-  </div>
-  <div class="form-group my-center">
-    <label class="title-mine">Password (Optional)</label>
-    <input type="password" class="form-control field-width" id="exampleFormControlInput1" placeholder="">
-  </div>
+<form action="" method="post">
+  <div class="containerr-2">
+    <div class="form-group my-center">
+      <label class="title-mine">Title</label>
+      <input type="text" class="form-control field-width" id="exampleFormControlInput1" placeholder="" required/>
+    </div>
+    <div class="form-group my-center">
+      <label class="title-mine">Description (Optional)</label>
+      <input type="text" class="form-control field-width" id="exampleFormControlInput1" placeholder="">
+    </div>
+    <div class="form-group my-center">
+      <label class="title-mine">Password (Optional)</label>
+      <input type="password" class="form-control field-width" id="exampleFormControlInput1" placeholder="">
+    </div>
   <div class="form-group my-center">
     <label class="title-mine">Validity</label>
     <input type="date" class="form-control field-width" id="exampleFormControlInput1" placeholder="">
@@ -76,13 +77,18 @@
   <form class="" role="search">
     <button class="btn btn-success custom-btn" type="submit">
       <a href="" class="anchor">
-        <py-script>
-import uuid
-print(uuid.uuid4())        
-      </py-script>
-      Generate Link
+      Generate Link & copy it from below
       </a>
+      <br>
     </button>
+    <br>
+    <!-- <py-script>
+        import uuid
+        print(uuid.uuid4())        
+      </py-script> -->
+    <textarea rows="4" cols="50" placeholder="Copy link from here"></textarea>
+  <br>
+  
 </form>
 </div>
 <!-- footer section -->
